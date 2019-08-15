@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 import { Link } from "gatsby";
 
 import palette from "../styles/palette";
+import "../styles/fonts.css";
 
 const Navbar = styled.nav`
   display: flex;
@@ -12,7 +13,8 @@ const Navbar = styled.nav`
 const LinkStyle = css`
   text-decoration: none;
   color: ${palette.main};
-  font-family: Exo, "Merriweather", "Georgia";
+  font-family: "Exo", sans-serif;
+  font-weight: 600;
 `;
 
 const Title = styled(Link)`
