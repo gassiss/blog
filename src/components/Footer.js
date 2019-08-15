@@ -1,4 +1,5 @@
 import React from "react";
+import { graphql, useStaticQuery } from "gatsby";
 import styled, { css } from "styled-components";
 import { FaLinkedinIn, FaGitlab, FaGithub } from "react-icons/fa";
 
@@ -56,11 +57,33 @@ function open(url) {
   return () => window.open(url); // eslint-disable-line
 }
 
-export default React.memo(() => (
-  <Footer>
-    <Linkedin onClick={open("https://www.linkedin.com/in/william-assis/")} />
-    <Gitlab onClick={open("https://gitlab.com/gassis")} />
-    <Github onClick={open("https://github.com/gassiss")} />
-    <p>Copyright &copy; 2019</p>
-  </Footer>
-));
+export default () => {
+  const {
+    site: {
+      siteMetadata: {
+        social: { linkedin, gitlab, github },
+      },
+    },
+  } = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          social {
+            github
+            gitlab
+            linkedin
+          }
+        }
+      }
+    }
+  `);
+
+  return (
+    <Footer>
+      <Linkedin onClick={open(linkedin)} />
+      <Gitlab onClick={open(gitlab)} />
+      <Github onClick={open(github)} />
+      <p>Copyright &copy; 2019</p>
+    </Footer>
+  );
+};

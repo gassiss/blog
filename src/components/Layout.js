@@ -13,10 +13,12 @@ const Container = styled.div`
 `;
 
 // eslint-disable-next-line
-export default ({ children }) => (
-  <Container>
-    <Navbar />
-    {children}
-    <Footer />
-  </Container>
-);
+export default ({ children }) => {
+  return (
+    <Container>
+      <Navbar />
+      {children}
+      <Footer />
+    </Container>
+  );
+};
