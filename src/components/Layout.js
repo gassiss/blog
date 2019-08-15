@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import Head from "./Head";
 
 const Container = styled.div`
   box-sizing: border-box;
@@ -13,9 +14,10 @@ const Container = styled.div`
 `;
 
 // eslint-disable-next-line
-export default ({ children }) => {
+export default ({ title, children }) => {
   return (
     <Container>
+      <Head title={title} />
       <Navbar />
       {children}
       <Footer />

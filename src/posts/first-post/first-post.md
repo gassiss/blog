@@ -11,6 +11,8 @@ This is my first post
 
 this is nice
 
+![picture of great barrier reef](./australia.jpg)
+
 1. one
 2. two
 3. three

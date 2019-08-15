@@ -24,7 +24,7 @@ export default ({
     },
   },
 }) => (
-  <Layout>
+  <Layout title={title}>
     <h1>{title}</h1>
     <p>{date}</p>
     <div dangerouslySetInnerHTML={{ __html: html }} />
