@@ -1,11 +1,9 @@
 @font-face {
   font-family: "Exo";
-  font-weight: 400;
   src: url("./files/Exo-Light.ttf");
 }
 
 @font-face {
   font-family: "Dosis";
-  font-weight: 500;
   src: url("./files/Dosis-Light.ttf");
 }

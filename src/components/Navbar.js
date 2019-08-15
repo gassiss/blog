@@ -3,11 +3,11 @@ import styled, { css } from "styled-components";
 import { Link } from "gatsby";
 
 import palette from "../styles/palette";
-import "../styles/fonts.css";
 
 const Navbar = styled.nav`
   display: flex;
   flex-direction: row;
+  align-items: center;
 `;
 
 const LinkStyle = css`
@@ -18,25 +18,37 @@ const LinkStyle = css`
 `;
 
 const Title = styled(Link)`
-  font-size: 2rem;
-  font-weight: 500;
   ${LinkStyle}
+  font-size: 2rem;
+
+  @media only screen and (max-width: 400px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const Nav = styled.ul`
   margin-left: auto;
-`;
 
-const NavLink = styled(Link)`
-  ${LinkStyle}
+  a {
+    ${LinkStyle}
+    font-size: 1.25rem;
+
+    @media only screen and (max-width: 400px) {
+      font-size: 1rem;
+    }
+
+    &:not(:last-child) {
+      padding-right: 2rem;
+    }
+  }
 `;
 
 export default () => (
   <Navbar>
-    <Title>William Assis</Title>
+    <Title to="/">William Assis</Title>
     <Nav>
-      <NavLink>Blog</NavLink>
-      <NavLink>About</NavLink>
+      <Link to="/">Blog</Link>
+      <Link to="/about">About</Link>
     </Nav>
   </Navbar>
 );
