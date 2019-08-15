@@ -52,11 +52,15 @@ const Github = styled(FaGithub)`
   }
 `;
 
-export default () => (
+function open(url) {
+  return () => window.open(url); // eslint-disable-line
+}
+
+export default React.memo(() => (
   <Footer>
-    <Linkedin />
-    <Gitlab />
-    <Github />
+    <Linkedin onClick={open("https://www.linkedin.com/in/william-assis/")} />
+    <Gitlab onClick={open("https://gitlab.com/gassis")} />
+    <Github onClick={open("https://github.com/gassiss")} />
     <p>Copyright &copy; 2019</p>
   </Footer>
-);
+));
