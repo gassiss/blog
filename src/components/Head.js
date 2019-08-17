@@ -1,5 +1,4 @@
 import React from "react";
-import { createPortal } from "react-dom";
+import { Helmet } from "react-helmet"
 
-export default ({ title }) =>
-  createPortal(<title>William Assis{title ? ` | ${title}` : ""}</title>, document.head); // eslint-disable-line
+export default ({ title }) => <Helmet title={`William Assis${title ? ` | ${title}` : ""}`} />
