@@ -3,13 +3,13 @@ import styled from "styled-components";
 
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import Head from "./Head"
+import Head from "./Head";
 
 const Container = styled.div`
   box-sizing: border-box;
   min-height: 100vh;
-  display: grid;
-  grid-template-rows: 5vh auto 5vh;
+  display: flex;
+  flex-direction: column;
   padding: 10px;
 `;
 

@@ -11,6 +11,9 @@ const Footer = styled.footer`
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+  flex: 0;
+  margin-top: auto;
+  width: 100%;
 
   p {
     font-family: "Exo", sans-serif;

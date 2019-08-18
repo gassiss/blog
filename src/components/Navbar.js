@@ -8,6 +8,7 @@ const Navbar = styled.nav`
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex: 0;
 `;
 
 const LinkStyle = css`
