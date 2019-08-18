@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import Head from "./Head";
+import Head from "./Head"
 
 const Container = styled.div`
   box-sizing: border-box;
