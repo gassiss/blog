@@ -18,6 +18,7 @@ const Footer = styled.footer`
   p {
     font-family: "Exo", sans-serif;
     color: #000;
+    font-weight: 600;
   }
 `;
 
