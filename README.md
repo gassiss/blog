@@ -6,5 +6,6 @@ To do:
 - Dark mode switch;
 - Light analytics;
 - Twitter link;
+- Posts index pagination;
 - RSS subscription;
 - Email subscription;

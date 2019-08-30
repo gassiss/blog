@@ -1,4 +1,4 @@
 import React from "react";
-import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet";
 
-export default ({ title }) => <Helmet title={`William Assis${title ? ` | ${title}` : ""}`} />
+export default ({ title }) => <Helmet title={`${title ? `${title} | ` : ""}William Assis`} />;

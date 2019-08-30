@@ -8,7 +8,11 @@ const Navbar = styled.nav`
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   flex: 0;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
 `;
 
 const LinkStyle = css`
