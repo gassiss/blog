@@ -4,10 +4,18 @@ import { Link, graphql, useStaticQuery } from "gatsby";
 
 import Layout from "../components/Layout";
 
-const Post = styled.div`
-  margin: 30px auto;
+const Container = styled.div`
   width: 100%;
-  max-width: 512px;
+  max-width: 720px;
+  margin: 15px auto;
+  box-sizing: border-box;
+`;
+
+const Post = styled.div`
+  margin: 35px 0;
+  padding-left: 15px;
+  width: 100%;
+  box-sizing: border-box;
 `;
 
 const Title = styled(Link)`
@@ -70,19 +78,21 @@ export default () => {
 
   return (
     <Layout>
-      {posts.map(post => (
-        <Post key={post.title}>
-          <Title to={`/${post.slug}`}>{post.title}</Title>
-          <PostedDate>
-            {new Date(`${post.date}T00:00`).toLocaleDateString("en-ca", {
-              month: "long",
-              year: "numeric",
-              day: "numeric",
-            })}
-          </PostedDate>
-          <Description>{post.description}</Description>
-        </Post>
-      ))}
+      <Container>
+        {posts.map(post => (
+          <Post key={post.title}>
+            <Title to={`/${post.slug}`}>{post.title}</Title>
+            <PostedDate>
+              {new Date(`${post.date}T00:00`).toLocaleDateString("en-ca", {
+                month: "long",
+                year: "numeric",
+                day: "numeric",
+              })}
+            </PostedDate>
+            <Description>{post.description}</Description>
+          </Post>
+        ))}
+      </Container>
     </Layout>
   );
 };

@@ -8,18 +8,6 @@ description: "A sneak peak on what this post is about"
 
 ![picture of great barrier reef](./australia.jpg)
 
-## H2 and unordered list:
-
-- one
-- two
-- three
-
-### H3 and ordered list:
-
-1. one
-2. two
-3. three
-
 THen every paragraph becomes a p
 
 adding space creates a new element

@@ -8,7 +8,7 @@ const Navbar = styled.nav`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex: 0;
   width: 100%;
   max-width: 720px;
@@ -31,29 +31,25 @@ const Title = styled(Link)`
   }
 `;
 
-const Nav = styled.ul`
-  margin-left: auto;
+// const Nav = styled.ul`
+//   margin-left: auto;
 
-  a {
-    ${LinkStyle}
-    font-size: 1.25rem;
+//   a {
+//     ${LinkStyle}
+//     font-size: 1.25rem;
 
-    @media only screen and (max-width: 400px) {
-      font-size: 1rem;
-    }
+//     @media only screen and (max-width: 400px) {
+//       font-size: 1rem;
+//     }
 
-    &:not(:last-child) {
-      padding-right: 2rem;
-    }
-  }
-`;
+//     &:not(:last-child) {
+//       padding-right: 2rem;
+//     }
+//   }
+// `;
 
 export default () => (
   <Navbar>
     <Title to="/">William Assis</Title>
-    <Nav>
-      <Link to="/">Blog</Link>
-      <Link to="/about">About</Link>
-    </Nav>
   </Navbar>
 );

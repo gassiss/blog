@@ -13,7 +13,6 @@ const Container = styled.div`
   padding: 10px;
 `;
 
-// eslint-disable-next-line
 export default ({ title, children }) => {
   return (
     <Container>
