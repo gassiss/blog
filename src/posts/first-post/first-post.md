@@ -1,7 +1,8 @@
 ---
 title: "First post"
 date: "2019-01-01"
-description: "A sneak peak on what this post is about"
+description: "A sneak peak on what this post is about making it long to see what happens when the text wrap"
+type: "Productivity"
 ---
 
 # TItles should be H1

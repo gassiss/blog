@@ -1,6 +1,7 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { Link, graphql, useStaticQuery } from "gatsby";
+import { FaMugHot, FaCode } from "react-icons/fa";
 
 import Layout from "../components/Layout";
 
@@ -12,8 +13,10 @@ const Container = styled.div`
 `;
 
 const Post = styled.div`
-  margin: 35px 0;
+  position: relative;
+  margin: 35px 0 60px;
   padding-left: 15px;
+  max-width: 500px;
   width: 100%;
   box-sizing: border-box;
 `;
@@ -25,6 +28,22 @@ const Title = styled(Link)`
   @media only screen and (max-width: 400px) {
     font-size: 1.4rem;
   }
+`;
+
+const IconStyle = css`
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  font-size: 4rem;
+  z-index: -1;
+  opacity: 0.05;
+`;
+
+const CoffeeIcon = styled(FaMugHot)`
+  ${IconStyle}
+`;
+const CodeIcon = styled(FaCode)`
+  ${IconStyle}
 `;
 
 const PostedDate = styled.div`
@@ -57,6 +76,7 @@ function getPosts() {
               title
               date
               description
+              type
             }
             fields {
               slug
@@ -82,6 +102,7 @@ export default () => {
         {posts.map(post => (
           <Post key={post.title}>
             <Title to={`/${post.slug}`}>{post.title}</Title>
+            {post.type === "Code" ? <CodeIcon /> : <CoffeeIcon />}
             <PostedDate>
               {new Date(`${post.date}T00:00`).toLocaleDateString("en-ca", {
                 month: "long",
