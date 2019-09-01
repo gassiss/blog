@@ -5,7 +5,7 @@ description: "A sneak peak on what this post is about making it long to see what
 type: "Productivity"
 ---
 
-# TItles should be H1
+## TItles should be H2
 
 ![picture of great barrier reef](./australia.jpg)
 
@@ -17,6 +17,11 @@ so if I don't put blank line
 they all stack together as one big line
 
 but with extra lines
+
+And this is how [a link](http://localhost:8000) looks like.
+
+> see here a blockquote
+> THIS IS A bloCKQUOte
 
 its a new p element
 
