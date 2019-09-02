@@ -25,11 +25,12 @@ And this is how [a link](http://localhost:8000) looks like.
 
 its a new p element
 
-```
-Inside code quotes becomes pre tag
+```javascript
+// Inside code quotes becomes pre tag
 function something() {
-    console.log('blablabla')
+  console.log("hit");
+  return 2 + 2;
 }
 ```
 
-`inside backticks becomes code tag`
+`javascript>console.log('inside backticks become code tag')`

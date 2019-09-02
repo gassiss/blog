@@ -18,3 +18,13 @@ a {
 a:hover {
   color: #6479c8;
 }
+
+.gatsby-highlight pre[class*="language-"].line-numbers {
+  padding: 0;
+  padding-left: 2.8em;
+  overflow: initial;
+}
+
+.gatsby-highlight pre[class*="language-"].line-numbers .line-numbers-rows {
+  border: none;
+}
