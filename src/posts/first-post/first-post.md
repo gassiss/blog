@@ -34,3 +34,5 @@ function something() {
 ```
 
 `javascript>console.log('inside backticks become code tag')`
+
+`text>this is none backticks`

@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-  max-width: 900px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
@@ -19,12 +20,29 @@ a:hover {
   color: #6479c8;
 }
 
-.gatsby-highlight pre[class*="language-"].line-numbers {
-  padding: 0;
-  padding-left: 2.8em;
+.gatsby-highlight {
+  overflow: auto;
+  margin: 1rem -1.5rem;
+}
+
+.gatsby-highlight pre[class*="language-"] {
+  border-radius: 10px;
+  padding-left: 1.5rem;
   overflow: initial;
 }
 
-.gatsby-highlight pre[class*="language-"].line-numbers .line-numbers-rows {
-  border: none;
+.language-text {
+  color: #000b !important;
+  background: #f3f4f5 !important;
+}
+
+@media only screen and (max-width: 750px) {
+  .gatsby-highlight {
+    overflow: hidden;
+    margin: 1rem -1.5rem;
+  }
+
+  .gatsby-highlight pre[class*="language-"] {
+    border-radius: 0;
+  }
 }

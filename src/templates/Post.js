@@ -52,8 +52,6 @@ const Article = styled.article`
   li,
   blockquote {
     font-weight: 500;
-    max-width: 720px;
-    margin: 0 auto;
     overflow: visible;
     font-size: 1.25rem;
   }

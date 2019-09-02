@@ -11,7 +11,6 @@ const Navbar = styled.nav`
   justify-content: flex-start;
   flex: 0;
   width: 100%;
-  max-width: 720px;
   margin: 0 auto;
 `;
 

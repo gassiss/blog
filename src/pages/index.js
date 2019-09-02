@@ -32,11 +32,15 @@ const Title = styled(Link)`
 
 const IconStyle = css`
   position: absolute;
-  top: 3rem;
+  top: 2rem;
   right: 0;
-  font-size: 4rem;
+  font-size: 6rem;
   z-index: -1;
   opacity: 0.05;
+
+  @media only screen and (max-width: 400px) {
+    font-size: 5rem;
+  }
 `;
 
 const CoffeeIcon = styled(FaMugHot)`

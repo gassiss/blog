@@ -19,14 +19,13 @@ module.exports = {
           {
             resolve: "gatsby-remark-images",
             options: {
-              maxWidth: 880,
+              maxWidth: 700,
               linkImagesToOriginal: false,
             },
           },
           {
             resolve: "gatsby-remark-prismjs",
             options: {
-              showLineNumbers: true,
               inlineCodeMarker: ">",
             },
           },

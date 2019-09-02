@@ -14,7 +14,6 @@ const Footer = styled.footer`
   flex: 0;
   margin: auto auto 0;
   width: 100%;
-  max-width: 720px;
 
   p {
     font-family: "Exo", sans-serif;
