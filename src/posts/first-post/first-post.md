@@ -20,7 +20,7 @@ but with extra lines
 
 And this is how [a link](http://localhost:8000) looks like.
 
-> see here a blockquote
+> see here a blockquote  
 > THIS IS A bloCKQUOte
 
 its a new p element

@@ -49,7 +49,8 @@ const Article = styled.article`
   p,
   ul,
   ol,
-  li {
+  li,
+  blockquote {
     font-weight: 500;
     max-width: 720px;
     margin: 0 auto;
@@ -71,10 +72,17 @@ const Article = styled.article`
     line-height: 1.4;
   }
 
+  blockquote {
+    border-left: 5px solid #ccc;
+    opacity: 0.7;
+    padding-left: 15px;
+  }
+
   @media only screen and (max-width: 400px) {
     h2 {
       font-size: 1.25rem;
     }
+
     p,
     ul,
     ol,
@@ -82,6 +90,7 @@ const Article = styled.article`
     a {
       font-size: 1.1rem;
     }
+
     p {
       line-height: 1.2;
       margin-bottom: 1.4rem;
