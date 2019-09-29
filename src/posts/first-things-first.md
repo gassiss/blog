@@ -29,13 +29,13 @@ I'm a software developer, and as such, I spend most of my day reading what other
 
 Writing is a skill like any other. You get better at writing by writing a lot. So if you, like me, need to communicate a lot through text, this is a good enough reason to start writing yourself.
 
-# Reason #2: Spreading your ideas
+## Reason #2: Spreading your ideas
 
 I personally love to help other people. I'll be writing software related posts for the most part to give other people my perspective on any give subject.
 
 Hopefully I succeed, and you learn something from me. I'm reaping the benefits of writing about anything (including this) right away, so it's a win-win situation :)
 
-# Reason #3: Maybe you're wrong
+## Reason #3: Maybe you're wrong
 
 This relates to the previous reason. We often have the idea that any person writing about something on the internet is right.
 
@@ -43,6 +43,6 @@ This is specially more intense if you don't know much about the given subject.
 
 I don't expect to be always right and I hope you speak up about my mistakes. I could be wrong, or I could be right. If I'm right, I can tell you why I think so and convince you. If I'm wrong, I learn something new and become better at the given subject. Win-win.
 
-# That's it
+## That's it
 
 If you decide to start your own blog, let me know! I'm frequently running out of stuff to read about and I'd love to help you improve this skill too! :)
