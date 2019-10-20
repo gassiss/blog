@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
+import { formatReadTime } from "../utils";
 
 export const query = graphql`
   query($slug: String!) {
@@ -13,6 +14,7 @@ export const query = graphql`
         date
       }
       html
+      timeToRead
     }
   }
 `;
@@ -101,18 +103,13 @@ export default ({
     markdownRemark: {
       frontmatter: { title, date },
       html,
+      timeToRead,
     },
   },
 }) => (
   <Layout title={title}>
     <Title>{title}</Title>
-    <PostDate>
-      {new Date(`${date}T00:00`).toLocaleDateString("en-ca", {
-        month: "long",
-        year: "numeric",
-        day: "numeric",
-      })}
-    </PostDate>
+    <PostDate>{formatReadTime(date, timeToRead)}</PostDate>
     <Article dangerouslySetInnerHTML={{ __html: html }} />
   </Layout>
 );

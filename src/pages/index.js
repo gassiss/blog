@@ -4,6 +4,7 @@ import { Link, graphql, useStaticQuery } from "gatsby";
 import { FaMugHot, FaCode } from "react-icons/fa";
 
 import Layout from "../components/Layout";
+import { formatReadTime } from "../utils";
 
 const Container = styled.div`
   width: 100%;
@@ -76,6 +77,7 @@ function getPosts() {
       allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
         edges {
           node {
+            timeToRead
             frontmatter {
               title
               date
@@ -91,9 +93,10 @@ function getPosts() {
     }
   `);
 
-  return data.allMarkdownRemark.edges.map(({ node: { frontmatter, fields } }) => ({
+  return data.allMarkdownRemark.edges.map(({ node: { frontmatter, fields, timeToRead } }) => ({
     ...frontmatter,
     slug: fields.slug,
+    timeToRead,
   }));
 }
 
@@ -107,13 +110,7 @@ export default () => {
           <Post key={post.title}>
             <Title to={`/${post.slug}`}>{post.title}</Title>
             {post.type === "Code" ? <CodeIcon /> : <CoffeeIcon />}
-            <PostedDate>
-              {new Date(`${post.date}T00:00`).toLocaleDateString("en-ca", {
-                month: "long",
-                year: "numeric",
-                day: "numeric",
-              })}
-            </PostedDate>
+            <PostedDate>{formatReadTime(post.date, post.timeToRead)}</PostedDate>
             <Description>{post.description}</Description>
           </Post>
         ))}
