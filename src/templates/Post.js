@@ -60,6 +60,7 @@ const Article = styled.article`
 
   h2 {
     font-size: 1.4rem;
+    margin-bottom: 1.4rem;
   }
 
   a,
@@ -74,8 +75,18 @@ const Article = styled.article`
 
   blockquote {
     border-left: 5px solid #ccc;
+    margin: 0 2rem;
     opacity: 0.7;
     padding-left: 15px;
+  }
+
+  ul {
+    padding-left: 3rem;
+    margin-bottom: 1.4rem;
+  }
+
+  li {
+    padding: 5px 0;
   }
 
   @media only screen and (max-width: 400px) {
