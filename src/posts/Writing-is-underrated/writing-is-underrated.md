@@ -40,6 +40,7 @@ in the contexts above explain why focus on writing over speaking
 -> You probably want to write specification for your features
 --> these should, ideally, be maintained in source control like you do with source code/tests
 --> they should evolve as the feature progresses
+-> communication channels increase "exponentially". Easier to pass on information in writing
 
 # conclusion
 
