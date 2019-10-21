@@ -5,6 +5,46 @@ description: "Why you should start writing"
 type: "Productivity"
 ---
 
+# introduction
+
+# why comunication is important
+
+-> how sales and communication are linked
+-> sales is more important than product
+--> person context
+---> resume/cover letter
+---> receiving promotion
+---> selling your idea in the company
+---> leading your team
+--> business context
+---> business doesn't exist without sales
+---> impact on reputation
+
+# specifically, why writing is crucial
+
+in the contexts above explain why focus on writing over speaking
+
+-> speaking starts with writing
+-> more leverage as it hits more people
+-> words speak for you when you're not actively speaking
+
+# in the context of software development
+
+-> As software developers, we're constantly reading docs, not watching docs.
+-> Don't buy into the "good code documents itself" BS:
+--> No one writes good code all the time (and most people don't write "good code" at all)
+--> It's harder to read code than to write it
+--> We read more code than we write
+--> If code is properly documented in english where it's due, code reuse is easier
+-> Onboarding peers into your team is easier if everything is documented in writing
+-> You probably want to write specification for your features
+--> these should, ideally, be maintained in source control like you do with source code/tests
+--> they should evolve as the feature progresses
+
+# conclusion
+
+In a world with 280 character messages and 60 second elevator pitches, it's hard to argue against the importance of communication as a skill.
+
 I know a grant total of 0 people who would say communication is **not** an important skill. If you do your math, I bet you will land at the very same total that I have.
 
 Which makes sense. In a world of tweeting and stuffed email boxes, being able to communicate precisely what you want in a clear and concise manner is **crucial**, and surprisingly hard. And although most people know this, very few people actually go out of their way to improve their communication skills.
