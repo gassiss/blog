@@ -9,38 +9,57 @@ type: "Productivity"
 
 # why comunication is important
 
--> how sales and communication are linked
--> sales is more important than product
---> person context
----> resume/cover letter
----> receiving promotion
----> selling your idea in the company
----> leading your team
---> business context
----> business doesn't exist without sales
----> impact on reputation
+You don't have sales without communication. And sales is fundamental for all businesses.
+
+The line above is hardly arguable, even though plenty of technical people try to. Some of the most common arguments you hear are:
+
+- You need technical knowledge to build the product
+  -> and you need to sell it to convince someone to use it.
+
+- Good products sells by itself
+  -> They may increase retention and the odds of getting referals from your current clients, yes. But if you don't do a good job marketing it you may be too slow
+
+Sales is also at the heart of your personal career. You're selling yourself when you write a resume/cover letter to get a new job. You're selling yourself when you're trying to convince your manager to promote you. If you have a great idea for your job, and you're convinced it will work, you have to convince others about it.
+
+So whether you're working for someone else or you're a business owner, you're constantly selling something as long as you're dealing with people!
+
+And if sales is fundamental for your career or business, communication is fundamental for sales.
 
 # specifically, why writing is crucial
 
-in the contexts above explain why focus on writing over speaking
+There are hardly any people in the world who can come up with an arbitrary subject they neve heard about and give a polished speech about it. That's not how sales work (not the good sales at least)
 
--> speaking starts with writing
--> more leverage as it hits more people
--> words speak for you when you're not actively speaking
+Have you ever felt like a person giving a lecture is the smartest person on that subject? Have you ever wondered how is it possible that someone can just come up and give an hour long lecture about a super specific subject?
+
+Well that doesn't happen overnight. The methodology changes from person to person, depending on the person itself, how important a speech is and how much previous knowledge the person has about the subject at hand. But at some level, there's always some sort of planning in advance, that often comes up in writing.
+
+So writing is crucial for communication. It is an essential skill to promote yourself, to scale your voice to the world (literally) and to turn you in a better speaker - which has all sorts of other positive side effects.
 
 # in the context of software development
 
--> As software developers, we're constantly reading docs, not watching docs.
--> Don't buy into the "good code documents itself" BS:
---> No one writes good code all the time (and most people don't write "good code" at all)
---> It's harder to read code than to write it
---> We read more code than we write
---> If code is properly documented in english where it's due, code reuse is easier
--> Onboarding peers into your team is easier if everything is documented in writing
--> You probably want to write specification for your features
---> these should, ideally, be maintained in source control like you do with source code/tests
---> they should evolve as the feature progresses
--> communication channels increase "exponentially". Easier to pass on information in writing
+Often times the outside world thinks that software development is about talking with a machine through code.
+
+While that is true at some level, developing a software is mostly about communicating with people.
+
+Making code easier to maintain is more important than making code more performant
+
+Software development has many activities that are unrelated to code. But when it comes to actual coding, there's three main activities: reading code, debugging code and writing code.
+
+Debugging code is hard. Reading is even harder. Writing is the easy part.
+
+You will spend most of your coding sessions reading or debuggin code rather than writing it. So you want to optmize the code for these two activites rather than being faster.
+
+On top of that, computers are so powerful nowadays that, even if you do have opportunity to optmize your code, there's a huge change the clients aren't going to notice anyway.
+
+And you know what's the best way of making code easier to understand? Comments and documentation.
+
+I've read several times the argument "good code documents itself". While that has a little bit of truth in it, I say you should never bet on it.
+
+When you create a mental map of what your application should do, the code will seem crystal clear for you eyes. But you can't bet that will hold true for the next guy - or you two weeks from now.
+
+Yes you should name your variables and functions properly to make it easier to understand the code itself. But nothing will ever beat documenting your code with comments/documents in plain >insert your language of work here<.
+
+Doing a good job not only guarantees the next person will know exactly what the function/procedure/API/whatever is supposed to do but also has no impact in the performance of your application, as your build is more likely to strip out the comments anyway.
 
 # conclusion
 
