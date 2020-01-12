@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import styled from "styled-components";
-import { FaLinkedinIn, FaGitlab, FaGithub } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 import palette from "../styles/palette";
 
@@ -59,7 +59,7 @@ export default () => {
   const {
     site: {
       siteMetadata: {
-        social: { linkedin, gitlab, github },
+        social: { linkedin, github },
       },
     },
   } = useStaticQuery(graphql`
@@ -68,7 +68,6 @@ export default () => {
         siteMetadata {
           social {
             github
-            gitlab
             linkedin
           }
         }
@@ -80,10 +79,9 @@ export default () => {
     <Footer>
       <SocialContainer>
         <SocialIcon Icon={FaLinkedinIn} hoverColor="#0077b5" link={linkedin} />
-        <SocialIcon Icon={FaGitlab} hoverColor="#fc6d26" link={gitlab} />
         <SocialIcon Icon={FaGithub} hoverColor="#000" link={github} />
       </SocialContainer>
-      <p>Copyright &copy; 2019</p>
+      <p>Copyright &copy; 2020</p>
     </Footer>
   );
 };

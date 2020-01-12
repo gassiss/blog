@@ -3,7 +3,6 @@ module.exports = {
     title: "William Assis",
     social: {
       linkedin: "https://www.linkedin.com/in/william-assis/",
-      gitlab: "https://gitlab.com/gassis",
       github: "https://github.com/gassiss",
     },
   },
