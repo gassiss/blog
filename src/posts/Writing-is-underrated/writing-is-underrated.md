@@ -5,9 +5,7 @@ description: "Why you should start writing"
 type: "Productivity"
 ---
 
-# introduction
-
-# why comunication is important
+## why comunication is important
 
 You don't have sales without communication. And sales is fundamental for all businesses.
 
@@ -25,7 +23,7 @@ So whether you're working for someone else or you're a business owner, you're co
 
 And if sales is fundamental for your career or business, communication is fundamental for sales.
 
-# specifically, why writing is crucial
+## specifically, why writing is crucial
 
 There are hardly any people in the world who can come up with an arbitrary subject they neve heard about and give a polished speech about it. That's not how sales work (not the good sales at least)
 
@@ -35,7 +33,7 @@ Well that doesn't happen overnight. The methodology changes from person to perso
 
 So writing is crucial for communication. It is an essential skill to promote yourself, to scale your voice to the world (literally) and to turn you in a better speaker - which has all sorts of other positive side effects.
 
-# in the context of software development
+## in the context of software development
 
 Often times the outside world thinks that software development is about talking with a machine through code.
 

@@ -5,7 +5,6 @@ To do:
 - styling;
 - Dark mode switch;
 - Light analytics;
-- Twitter link;
-- Posts index pagination;
 - RSS subscription;
 - Email subscription;
+- Posts index pagination;

@@ -60,7 +60,7 @@ const Article = styled.article`
 
   h2 {
     font-size: 1.4rem;
-    margin-bottom: 1.4rem;
+    margin-bottom: 1.2rem;
   }
 
   a,
@@ -69,7 +69,7 @@ const Article = styled.article`
   }
 
   p {
-    margin-bottom: 1.6rem;
+    margin-bottom: 2.1rem;
     line-height: 1.4;
   }
 
